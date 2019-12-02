@@ -48,6 +48,7 @@ D:\Azure DevOps\BookStore\BookStore\BookStore\bin\roslyn\vbc.rsp
 D:\Azure DevOps\BookStore\BookStore\BookStore\bin\roslyn\VBCSCompiler.exe
 D:\Azure DevOps\BookStore\BookStore\BookStore\bin\roslyn\VBCSCompiler.exe.config
 D:\Azure DevOps\BookStore\BookStore\BookStore\bin\Antlr3.Runtime.dll
+D:\Azure DevOps\BookStore\BookStore\BookStore\bin\BookStore.Domain.dll
 D:\Azure DevOps\BookStore\BookStore\BookStore\bin\EntityFramework.dll
 D:\Azure DevOps\BookStore\BookStore\BookStore\bin\EntityFramework.SqlServer.dll
 D:\Azure DevOps\BookStore\BookStore\BookStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -61,6 +62,7 @@ D:\Azure DevOps\BookStore\BookStore\BookStore\bin\System.Web.WebPages.Deployment
 D:\Azure DevOps\BookStore\BookStore\BookStore\bin\System.Web.WebPages.dll
 D:\Azure DevOps\BookStore\BookStore\BookStore\bin\System.Web.WebPages.Razor.dll
 D:\Azure DevOps\BookStore\BookStore\BookStore\bin\WebGrease.dll
+D:\Azure DevOps\BookStore\BookStore\BookStore\bin\BookStore.Domain.pdb
 D:\Azure DevOps\BookStore\BookStore\BookStore\bin\EntityFramework.xml
 D:\Azure DevOps\BookStore\BookStore\BookStore\bin\EntityFramework.SqlServer.xml
 D:\Azure DevOps\BookStore\BookStore\BookStore\bin\System.Web.Helpers.xml
