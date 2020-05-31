@@ -81,3 +81,4 @@ D:\Azure DevOps\BookStore\BookStore\BookStore\obj\Debug\BookStore.dll
 D:\Azure DevOps\BookStore\BookStore\BookStore\obj\Debug\BookStore.pdb
 D:\Azure DevOps\BookStore\BookStore\BookStore\obj\Debug\BookStore.Migrations.v1.resources
 D:\Azure DevOps\BookStore\BookStore\BookStore\obj\Debug\BookStore.csproj.GenerateResource.cache
+D:\Azure DevOps\BookStore\BookStore\BookStore\obj\Debug\BookStore.csproj.CoreCompileInputs.cache

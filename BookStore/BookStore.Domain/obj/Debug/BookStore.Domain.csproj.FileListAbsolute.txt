@@ -3,3 +3,4 @@ D:\Azure DevOps\BookStore\BookStore\BookStore.Domain\bin\Debug\BookStore.Domain.
 D:\Azure DevOps\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.csprojAssemblyReference.cache
 D:\Azure DevOps\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.dll
 D:\Azure DevOps\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.pdb
+D:\Azure DevOps\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.csproj.CoreCompileInputs.cache
