@@ -1,8 +1,11 @@
 ﻿using BookStore.Domain;
 using System.Web.Mvc;
+using System.Web.Routing;
 
 namespace BookStore.Controllers
 {
+    [RoutePrefix("Teste")]
+    [Route("{action=Dados}")]
     public class TesteController : Controller
     {
         public ViewResult Dados(int Id)
@@ -19,6 +22,11 @@ namespace BookStore.Controllers
             Session["Categoria"] = "Móveis";
 
             return View(autor);
+        }
+
+        public string Index(int Id)
+        {
+            return "Rota Default";
         }
 
         public JsonResult UmaAction(int id, string nome)
@@ -38,6 +46,18 @@ namespace BookStore.Controllers
         public JsonResult ActionDois(Autor autor)
         {
             return Json(autor);
+        }
+
+        [Route("minharota/{id:int}")]
+        public string MinhaAction(int id)
+        {
+            return "Ok! Cheguei na rota!";
+        }
+
+        [Route("~/rotaignorada/{id:int}")]
+        public string MinhaAction2(int id)
+        {
+            return "Ok! Cheguei na rota ignorada!";
         }
     }
 }

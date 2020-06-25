@@ -4,3 +4,8 @@ D:\Azure DevOps\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.
 D:\Azure DevOps\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.dll
 D:\Azure DevOps\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.pdb
 D:\Azure DevOps\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Michael Peter\source\MyProjects\BookStore\BookStore\BookStore.Domain\bin\Debug\BookStore.Domain.dll
+C:\Users\Michael Peter\source\MyProjects\BookStore\BookStore\BookStore.Domain\bin\Debug\BookStore.Domain.pdb
+C:\Users\Michael Peter\source\MyProjects\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Michael Peter\source\MyProjects\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.dll
+C:\Users\Michael Peter\source\MyProjects\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.pdb
