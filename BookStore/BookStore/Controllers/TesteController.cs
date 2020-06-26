@@ -59,5 +59,12 @@ namespace BookStore.Controllers
         {
             return "Ok! Cheguei na rota ignorada!";
         }
+
+        [Route("rotarestrita/{categoria:alpha:minLength(3)}")]
+        public string MinhaAction3(string categoria)
+        {
+            return "Ok! Cheguei na rota restrita! " + categoria;
+        }
+
     }
 }
