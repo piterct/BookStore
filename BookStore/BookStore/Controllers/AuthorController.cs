@@ -9,7 +9,7 @@ using System.Web.Routing;
 namespace BookStore.Controllers
 {
     [RoutePrefix("autores")]
-    [LogActionFilter()]
+    //[LogActionFilter()]
     public class AuthorController : Controller
     {
         [Route("listar")]
