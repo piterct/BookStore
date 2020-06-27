@@ -15,3 +15,8 @@ C:\Users\Michael Peter\source\Git Projects\BookStore\BookStore\BookStore.Domain\
 C:\Users\Michael Peter\source\Git Projects\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Michael Peter\source\Git Projects\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.dll
 C:\Users\Michael Peter\source\Git Projects\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.pdb
+D:\Git Projects\BookStore\BookStore\BookStore.Domain\bin\Debug\BookStore.Domain.dll
+D:\Git Projects\BookStore\BookStore\BookStore.Domain\bin\Debug\BookStore.Domain.pdb
+D:\Git Projects\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.csproj.CoreCompileInputs.cache
+D:\Git Projects\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.dll
+D:\Git Projects\BookStore\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.pdb

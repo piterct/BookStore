@@ -22,6 +22,7 @@ namespace BookStore.App_Start
             // it is NOT necessary to register your controllers
             container.RegisterType<BookStoreDataContext, BookStoreDataContext>();
             container.RegisterType<IAuthorRepository, AuthorRepository>();
+            container.RegisterType<ICategoryRepository, CategoryRepository>();
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
