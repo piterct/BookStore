@@ -1,4 +1,5 @@
-﻿using BookStore.Filters;
+﻿using BookStore.App_Start;
+using BookStore.Filters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,9 @@ namespace BookStore
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            UnityConfig.RegisterComponents();
+
         }
     }
 }

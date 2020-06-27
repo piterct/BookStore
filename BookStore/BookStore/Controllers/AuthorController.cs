@@ -15,17 +15,17 @@ namespace BookStore.Controllers
     //[LogActionFilter()]
     public class AuthorController : Controller
     {
-        private IAuthorRepository repository;
+        private IAuthorRepository _repository;
 
-        public AuthorController()
+        public AuthorController(IAuthorRepository repository)
         {
-            repository = new AuthorRepository();
+            _repository = repository;
         }
 
         [Route("listar")]
         public ActionResult Index()
         {
-            var autores = repository.Get();
+            var autores = _repository.Get();
             return View(autores);
         }
 
@@ -39,7 +39,7 @@ namespace BookStore.Controllers
         [HttpPost]
         public ActionResult Create(Autor author)
         {
-            if (repository.Create(author))
+            if (_repository.Create(author))
             {
                 return RedirectToAction("Index");
             }
@@ -50,7 +50,7 @@ namespace BookStore.Controllers
         [Route("editar/{id:int}")]
         public ActionResult Edit(int id)
         {
-            var author = repository.Get(id);
+            var author = _repository.Get(id);
             return View(author);
         }
 
@@ -58,7 +58,7 @@ namespace BookStore.Controllers
         [HttpPost]
         public ActionResult Edit(Autor author)
         {
-            if (repository.Update(author))
+            if (_repository.Update(author))
             {
                 return RedirectToAction("Index");
             }
@@ -69,7 +69,7 @@ namespace BookStore.Controllers
         [Route("excluir/{id:int}")]
         public ActionResult Delete(int id)
         {
-            var author = repository.Get(id);
+            var author = _repository.Get(id);
             return View(author);
         }
 
@@ -78,7 +78,7 @@ namespace BookStore.Controllers
         [ActionName("Delete")]
         public ActionResult DeleteConfirm(int id)
         {
-            repository.Delete(id);
+            _repository.Delete(id);
             return RedirectToAction("Index");
         }
     }
