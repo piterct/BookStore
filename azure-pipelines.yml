@@ -1,8 +1,8 @@
 # ASP.NET
-- task: GitHubRelease@1
+- task: GitHubRelease@0
   inputs:
     repositoryName: '$(Build.Repository.BookStore)'
-    action: 'create'
+    action: 'edit'
     target: '$(Build.SourceVersion)'
     tagSource: 'gitTag'
     changeLogCompareToRelease: 'lastFullRelease'
