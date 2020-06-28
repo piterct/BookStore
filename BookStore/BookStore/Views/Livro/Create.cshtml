@@ -3,9 +3,15 @@
     ViewBag.Title = "Criando um novo livro...";
 }
 
-<h2>Novo Livro</h2>
 
-<form>
+@helper MyFunction(string name) { 
+ <text>O nome informado é @name </text> 
+    }
+
+<h2>Novo Livro</h2>
+@using(Html.BeginForm())
+{
+
     <div class="form-group">
         @Html.LabelFor(model => model.Nome)
         @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control" } });
@@ -24,14 +30,19 @@
     <div class="form-group">
         @Html.LabelFor(model => model.CategoriaId)
         @Html.DropDownListFor(
-       model => model.CategoriaId,
-       Model.CategoriaOption,
-       "Selecione uma opção...",
-       new { htmlAttributes = new { @class = "form-control" } })
+        model => model.CategoriaId,
+        Model.CategoriaOption,
+        "Selecione uma opção...",
+        new { htmlAttributes = new { @class = "form-control" } })
     </div>
 
     <button type="submit" class="btn btn-default">Submit</button>
-</form>
+
+}
+<p>
+    <br />
+    @MyFunction("Michael Peter")
+</p>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
