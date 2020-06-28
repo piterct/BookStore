@@ -33,7 +33,6 @@ namespace BookStore.Repositories
             try
             {
                 _db.Entry<Autor>(autor).State = EntityState.Modified;
-                _db.Autores.Add(autor);
                 _db.SaveChanges();
 
                 return true;
