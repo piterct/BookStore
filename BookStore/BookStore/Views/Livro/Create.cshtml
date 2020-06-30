@@ -19,10 +19,21 @@
 @using (Html.BeginForm())
 {
 
-    @Html.Partial("Partials/EditorBookPartial", Model);
+    @Html.Partial("Partials/EditorBookPartial", Model)
+    Layout = "~/Views/Shared/_LayoutNovo.cshtml";
 
     <button type="submit" class="btn btn-default">Salvar</button>
 
+}
+
+
+@section menu{
+    <div>
+        Olá você está na página de criação
+        <p>
+            <a href="@Url.Action("Index")">Voltar</a> 
+        </p>
+    </div>
 }
 
 @section Scripts {

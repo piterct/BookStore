@@ -15,7 +15,7 @@ namespace BookStore.Controllers
     //[LogActionFilter()]
     public class AuthorController : Controller
     {
-        private IAuthorRepository _repository;
+        private readonly IAuthorRepository _repository;
 
         public AuthorController(IAuthorRepository repository)
         {

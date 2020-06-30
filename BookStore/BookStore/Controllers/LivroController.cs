@@ -12,8 +12,8 @@ namespace BookStore.Controllers
     [RoutePrefix("livros")]
     public class LivroController : Controller
     {
-        private IBookRepository _repository;
-        private ICategoryRepository _categoryRepository;
+        private readonly IBookRepository _repository;
+        private readonly ICategoryRepository _categoryRepository;
 
 
         public LivroController(IBookRepository repository, ICategoryRepository categoryRepository)

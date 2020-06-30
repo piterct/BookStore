@@ -9,7 +9,7 @@ namespace BookStore.Repositories
 {
     public class BookRepositoy : IBookRepository
     {
-        private BookStoreDataContext _db = new BookStoreDataContext();
+        private readonly BookStoreDataContext _db = new BookStoreDataContext();
 
 
         public bool Create(Livro livro)
