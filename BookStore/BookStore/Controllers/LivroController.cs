@@ -48,12 +48,25 @@ namespace BookStore.Controllers
         [HttpPost]
         public ActionResult Create(EditorBookViewModel model)
         {
-            var livro = new Livro();
-            livro.Nome = model.Nome;
-            livro.ISBN = model.ISBN;
-            livro.DataLancamento = model.DataLancamento;
-            livro.CategoriaId = model.CategoriaId;
-            _repository.Create(livro);
+
+            if (!ModelState.IsValid)
+            {
+                var categorias = _categoryRepository.Get();
+                model.CategoriaOption = new SelectList(categorias, "Id", "Nome");
+
+                return View(model);
+            }
+            else
+            {
+                var livro = new Livro();
+                livro.Nome = model.Nome;
+                livro.ISBN = model.ISBN;
+                livro.DataLancamento = model.DataLancamento;
+                livro.CategoriaId = model.CategoriaId;
+                _repository.Create(livro);
+            }
+
+            //ValidationMessage(model);
 
             return RedirectToAction("Index");
         }
@@ -89,6 +102,22 @@ namespace BookStore.Controllers
             _repository.Update(editBook);
 
             return RedirectToAction("Index");
+        }
+
+
+        private ViewResult ValidationMessage(EditorBookViewModel model)
+        {
+            try
+            {
+                throw new Exception("Falha no banco");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("Mensagem", ex.Message);
+                var categorias = _categoryRepository.Get();
+                model.CategoriaOption = new SelectList(categorias, "Id", "Nome");
+                return View(model);
+            }
         }
 
     }
