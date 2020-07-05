@@ -1,11 +1,9 @@
 ﻿using BookStore.Context;
-using BookStore.Domain;
+using BookStore.Domain.Entities;
 using BookStore.Repositories.Contracts;
-using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Web;
 
 namespace BookStore.Repositories
 {

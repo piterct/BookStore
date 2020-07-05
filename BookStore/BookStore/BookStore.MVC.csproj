@@ -241,6 +241,10 @@
       <Project>{c6f592ac-ffbf-4e7d-87bd-de4da78e9774}</Project>
       <Name>BookStore.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BooStore.Service\BooStore.Service.csproj">
+      <Project>{51d98113-d3fe-4e41-8e2d-ee715f94e078}</Project>
+      <Name>BooStore.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201912020239111_v1.resx">

@@ -1,5 +1,4 @@
-﻿
-using BookStore.Domain;
+﻿using BookStore.Domain.Entities;
 using BookStore.Mapping;
 using System.Data.Entity;
 

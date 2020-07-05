@@ -1,5 +1,6 @@
 ﻿using BookStore.Context;
 using BookStore.Domain;
+using BookStore.Domain.Entities;
 using BookStore.Repositories.Contracts;
 using System;
 using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿using BookStore.Domain;
+﻿using BookStore.Domain.Entities;
 using System.Data.Entity.ModelConfiguration;
 
 namespace BookStore.Mapping

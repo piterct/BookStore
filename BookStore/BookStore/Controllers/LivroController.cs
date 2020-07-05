@@ -1,10 +1,7 @@
-﻿using BookStore.Domain;
+﻿using BookStore.Domain.Entities;
 using BookStore.Repositories.Contracts;
 using BookStore.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace BookStore.Controllers

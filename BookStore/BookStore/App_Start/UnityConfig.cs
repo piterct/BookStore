@@ -1,6 +1,8 @@
 ﻿using BookStore.Context;
+using BookStore.Domain.Services.Contracts;
 using BookStore.Repositories;
 using BookStore.Repositories.Contracts;
+using BooStore.Service.Services;
 using System.Web.Mvc;
 using Unity;
 using Unity.AspNet.Mvc;
@@ -18,6 +20,11 @@ namespace BookStore.App_Start
             // it is NOT necessary to register your controllers
             #region Configurations
             container.RegisterType<BookStoreDataContext, BookStoreDataContext>();
+            #endregion
+
+            #region Services
+            container.RegisterType<IAuthorService, AuthorService>();
+
             #endregion
 
             #region Repositories

@@ -1,11 +1,6 @@
-﻿using BookStore.Domain;
-using BookStore.Filters;
-using BookStore.Repositories;
+﻿using BookStore.Domain.Entities;
+using BookStore.Domain.Services.Contracts;
 using BookStore.Repositories.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
@@ -15,11 +10,14 @@ namespace BookStore.Controllers
     //[LogActionFilter()]
     public class AuthorController : Controller
     {
+
         private readonly IAuthorRepository _repository;
 
-        public AuthorController(IAuthorRepository repository)
+        private readonly IAuthorService _service;
+        public AuthorController(IAuthorRepository repository, IAuthorService service)
         {
             _repository = repository;
+            _service = service;
         }
 
         [Route("listar")]
