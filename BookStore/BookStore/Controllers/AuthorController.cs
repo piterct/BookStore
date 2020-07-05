@@ -1,6 +1,5 @@
 ﻿using BookStore.Domain.Entities;
 using BookStore.Domain.Services.Contracts;
-using BookStore.Repositories.Contracts;
 using System.Web.Mvc;
 using System.Web.Routing;
 
@@ -11,19 +10,16 @@ namespace BookStore.Controllers
     public class AuthorController : Controller
     {
 
-        private readonly IAuthorRepository _repository;
-
         private readonly IAuthorService _service;
-        public AuthorController(IAuthorRepository repository, IAuthorService service)
+        public AuthorController(IAuthorService service)
         {
-            _repository = repository;
             _service = service;
         }
 
         [Route("listar")]
         public ActionResult Index()
         {
-            var autores = _repository.Get();
+            var autores = _service.Get();
             return View(autores);
         }
 
@@ -37,7 +33,7 @@ namespace BookStore.Controllers
         [HttpPost]
         public ActionResult Create(Autor author)
         {
-            if (_repository.Create(author))
+            if (_service.Create(author))
             {
                 return RedirectToAction("Index");
             }
@@ -48,7 +44,7 @@ namespace BookStore.Controllers
         [Route("editar/{id:int}")]
         public ActionResult Edit(int id)
         {
-            var author = _repository.Get(id);
+            var author = _service.Get(id);
             return View(author);
         }
 
@@ -56,7 +52,7 @@ namespace BookStore.Controllers
         [HttpPost]
         public ActionResult Edit(Autor author)
         {
-            if (_repository.Update(author))
+            if (_service.Update(author))
             {
                 return RedirectToAction("Index");
             }
@@ -67,7 +63,7 @@ namespace BookStore.Controllers
         [Route("excluir/{id:int}")]
         public ActionResult Delete(int id)
         {
-            var author = _repository.Get(id);
+            var author = _service.Get(id);
             return View(author);
         }
 
@@ -76,7 +72,7 @@ namespace BookStore.Controllers
         [ActionName("Delete")]
         public ActionResult DeleteConfirm(int id)
         {
-            _repository.Delete(id);
+            _service.Delete(id);
             return RedirectToAction("Index");
         }
     }
